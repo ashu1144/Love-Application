@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Question For You 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="hearts" id="hearts"></div>
+  <canvas id="confetti"></canvas>
+
+  <main class="card" id="card">
+    <!-- Step 1: intro -->
+    <section class="step active" id="step-intro">
+      <div class="emoji">💌</div>
+      <h1>Hey <span class="her-name">you</span>…</h1>
+      <p>I have something important to ask you.</p>
+      <button class="btn yes" id="start">Open it 💖</button>
+    </section>
+
+    <!-- Step 2: sweet messages -->
+    <section class="step" id="step-story">
+      <div class="emoji" id="story-emoji">✨</div>
+      <p class="story-text" id="story-text"></p>
+      <button class="btn yes" id="next">Next →</button>
+    </section>
+
+    <!-- Step 3: the question -->
+    <section class="step" id="step-question">
+      <img class="gif" alt="" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" onerror="this.style.display='none'" />
+      <div class="emoji big">🥺</div>
+      <h1>Will you be my girlfriend?</h1>
+      <p class="sub" id="sub">Please say yes… 💕</p>
+      <div class="buttons" id="buttons">
+        <button class="btn yes" id="yes">Yes! 💖</button>
+        <button class="btn no" id="no">No 💔</button>
+      </div>
+    </section>
+
+    <!-- Step 4: celebration -->
+    <section class="step" id="step-yes">
+      <div class="emoji big bounce">🥰</div>
+      <h1>YAYYY! She said yes!! 🎉</h1>
+      <p class="story-text">You just made me the happiest person in the world.<br />I promise to make you smile every single day. 💞</p>
+      <p class="sign">— <span class="from-name">Yours</span> ❤️</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
